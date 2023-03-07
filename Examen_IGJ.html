@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Edit Features</title>
+
+    <!-- Configure dojo for asynchronous module loading -->
+    <script>
+        var dojoConfig = {
+            async: true
+        };
+    </script>
+
+    <!-- Reference libraries. The first CSS is a Dojo theme that gives dijits a consistent style. -->
+    <link rel="stylesheet" href="http://js.arcgis.com/3.42/dijit/themes/nihilo/nihilo.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.42/esri/css/esri.css">
+    <link rel="stylesheet" href="ejer16.css"/>
+    <script src="http://js.arcgis.com/3.42/"></script>
+    <script src="examen_IGJ.js"></script>
+
+
+</head>
+
+<body class="nihilo">
+<div id="bcMain" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'sidebar'">
+    <div id="cpTop" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+        <div id="divTop" style="text-align: center; font-size: x-large;">Areas de servicio de los centros de salud del sur de Madrid</div>
+    </div>
+    <!-- <div id="cpLeft" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'left'">
+        <div id="divLeft"></div>
+    </div> -->
+          
+    <div id="cpCenter" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'" style="height: 100%;">
+       <div style="text-align: center;"> <button id="pie" style="position: absolute;z-index: 1;font-size: larger;">A pie</button>
+        <button id="coche" style="position: absolute;z-index: 1;font-size: larger;margin-left: 60px;">En coche</button>
+    </div><div id="map" style="z-index: 6;"></div>
+    </div>
+</div>
+</body>
+</html>
